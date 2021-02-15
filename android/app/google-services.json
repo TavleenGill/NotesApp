@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "233672547187",
+    "project_id": "notes-9636f",
+    "storage_bucket": "notes-9636f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:233672547187:android:d3af3f7e886ba33e8a4306",
+        "android_client_info": {
+          "package_name": "com.TavApp.notes_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "233672547187-mkkvqhijehdcfbquih8iljdj8n5968lu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAh3ydYcqiE4XGz8uAELDDZQ88P78P_4M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "233672547187-mkkvqhijehdcfbquih8iljdj8n5968lu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
