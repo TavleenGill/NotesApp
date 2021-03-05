@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:notes_app/screens/ToDo_list.dart';
 import 'package:notes_app/screens/add_note.dart';
+import 'package:notes_app/screens/completed_list._widget.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({Key key}) : super(key: key);
@@ -16,7 +17,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     final tabs = [
       ToDoList(),
-      Container(),
+      CompletedListWidget(),
     ];
     return Scaffold(
       appBar: AppBar(

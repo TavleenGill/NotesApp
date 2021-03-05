@@ -17,4 +17,33 @@ class ToDoProvider extends ChangeNotifier {
 
   List<ToDoModel> get todos =>
       _todos.where((todoModel) => todoModel.completed == false).toList();
+
+  List<ToDoModel> get todosCompleted =>
+      _todos.where((todoModel) => todoModel.completed == true).toList();
+
+  void addToDo(ToDoModel todo) {
+    _todos.add(todo);
+
+    notifyListeners();
+  }
+
+  void deleteToDo(ToDoModel todo) {
+    _todos.remove(todo);
+
+    notifyListeners();
+  }
+
+  bool todoStatus(ToDoModel todo) {
+    todo.completed = !todo.completed;
+
+    notifyListeners();
+    return todo.completed;
+  }
+
+  void updateTodo(ToDoModel toDoModel, String title, String note) {
+    toDoModel.title = title;
+    toDoModel.note = note;
+
+    notifyListeners();
+  }
 }

@@ -48,13 +48,7 @@ class ToDoFormWidget extends StatelessWidget {
   Widget buildNote() => TextFormField(
         initialValue: note,
         maxLines: null,
-        onChanged: onChangedTitle,
-        validator: (note) {
-          if (note.isEmpty) {
-            return 'Note cannot be empty';
-          }
-          return null;
-        },
+        onChanged: onChangedNote,
         decoration:
             InputDecoration(border: UnderlineInputBorder(), labelText: 'Note'),
       );
